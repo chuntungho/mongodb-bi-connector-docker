@@ -1,0 +1,22 @@
+## The full documentation is available at:
+## https://docs.mongodb.com/bi-connector/master/reference/mongosqld/#configuration-file
+
+net:
+  bindIp: "0.0.0.0" # To bind to multiple IP addresses, enter a list of comma separated values.
+  port: 3307
+  ssl:
+    mode: "disabled"
+    # allowInvalidCertificates: false
+    # PEMKeyFile: <string>
+    # PEMKeyPassword: <string>
+    # CAFile: <string>
+    # minimumTLSVersion: TLS1_1
+
+## MongoDB options - configure how mongosqld should connect to your MongoDB cluster.
+## https://docs.mongodb.com/bi-connector/master/reference/mongosqld/#mongodb-host-options
+mongodb:
+  # versionCompatibility: <string>
+  net:
+    uri: "mongodb://mongodb:27017" # https://docs.mongodb.com/manual/reference/connection-string/#mongodb-uri
+    ssl:
+      enabled: false

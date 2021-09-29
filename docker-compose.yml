@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+  mongodb:
+    image: mongo:bionic
+  
+  mongodb-bi-connector:
+    image: chuntungho/mongodb-bi-connector
+    ports:
+      - 3307:3307
+    volumes:
+      - ./mongosqld-config.yml:/mongosqld/mongosqld-config.yml
